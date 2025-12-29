@@ -75,11 +75,9 @@ class SavingsAccount extends WithdrawableAccount {
 
 class FixedDepositAccount extends BankAccount {
     double interestRate;
-    boolean isMatured;
     
     public FixedDepositAccount(String accountNumber, String maturityDate) {
         super(accountNumber, "Fixed Deposit");
         this.interestRate = 0.06;
-        this.isMatured = false;
     }
 }
